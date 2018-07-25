@@ -20,7 +20,6 @@ int Rpwm6 = A3;
 
 int rc_channel1 = 10;
 int rc_channel4 = 11;
-int switchD = 12;
 
 void setup() {
   pinMode(Lpwm1,OUTPUT);
@@ -34,21 +33,15 @@ void setup() {
 
   pinMode(rc_channel1, INPUT);
   pinMode(rc_channel4, INPUT);
-  pinMode(switchD, INPUT);
 
   Serial.begin(9600);
 }
 
 void loop() {
   int pwm = 0;
-  int swd = pulseIn(switchD, HIGH, 25000);
   int rc1 = pulseIn(rc_channel1, HIGH, 25000);
   int rc4 = pulseIn(rc_channel4, HIGH, 25000);
   
-  Serial.print("switch: ");
-  Serial.print(swd);
-  Serial.print(" raw channel4: ");
-  Serial.print(rc4);
 
   if(rc1 == 0 || rc4 == 0){
     Serial.println("No Signal yasta");
