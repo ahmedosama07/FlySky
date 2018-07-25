@@ -30,6 +30,10 @@ void setup() {
   pinMode(Rpwm3,OUTPUT);
   pinMode(Lpwm4,OUTPUT);
   pinMode(Rpwm4,OUTPUT);
+  pinMode(Rpwm5,OUTPUT);
+  pinMode(Lpwm5,OUTPUT);
+  pinMode(Rpwm6,OUTPUT);
+  pinMode(Lpwm6,OUTPUT);
 
   pinMode(rc_channel1, INPUT);
   pinMode(rc_channel4, INPUT);
