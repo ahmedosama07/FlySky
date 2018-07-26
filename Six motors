@@ -13,10 +13,10 @@ int Rpwm3 = 7;
 //Right Motors
 int Lpwm4 = 8;
 int Rpwm4 = 9;
-int Lpwm5 = A0;
-int Rpwm5 = A1;
-int Lpwm6 = A2;
-int Rpwm6 = A3;
+int Lpwm5 = 12;
+int Rpwm5 = 13;
+int Lpwm6 = 45;
+int Rpwm6 = 46;
 
 int rc_channel1 = 10;
 int rc_channel4 = 11;
